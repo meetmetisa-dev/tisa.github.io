@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The evidence-based research portfolio of Tisa Selma, Ph.D.: video QoE, encrypted streaming, multimodal engagement, computer vision, and reliable machine learning.">
+  <title>Tisa Selma, Ph.D. | Evidence-based Research Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tisa Selma home">TISA SELMA</a>
+    <nav aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#recognition">Recognition</a>
+    </nav>
+    <a class="mail-icon" href="mailto:meetme.tisa@gmail.com" title="Email Tisa Selma" aria-label="Email Tisa Selma">↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/figures/research-system.png" alt="Research progression from encrypted delivery through human experience and explainable inference to drift detection and self-healing">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="kicker">Computer Science · Human-centered AI · Networked multimedia</p>
+        <h1>Tisa Selma, Ph.D.</h1>
+        <p class="hero-thesis">Making encrypted streaming observable, human experience measurable, and machine-learning systems accountable when conditions change.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Read the research <span>↓</span></a>
+          <a class="button quiet" href="assets/Tisa_Selma_CV.pdf">Curriculum vitae ↗</a>
+        </div>
+      </div>
+      <p class="hero-source">Research map reconstructed from the published program and submitted QoE-Foresight manuscript</p>
+    </section>
+
+    <section class="proof-strip" aria-label="Profile summary">
+      <div><strong>5 + 1</strong><span>peer-reviewed works + submitted manuscript</span></div>
+      <div><strong>2026</strong><span>Ph.D. in Computer Science, UAEU</span></div>
+      <div><strong>20+ years</strong><span>software, data, programs, and IT leadership</span></div>
+      <div><strong>2 grants</strong><span>research supported by UAEU and UAEU-ADU awards</span></div>
+    </section>
+
+    <section id="research" class="opening section-pad">
+      <p class="section-index">01 / Research thesis</p>
+      <div class="opening-grid">
+        <h2>Quality of Experience is not one number.</h2>
+        <div>
+          <p class="lead">It is a changing relationship among network delivery, playback behavior, visual quality, device state, advertising, emotion, and human judgment.</p>
+          <p>My research develops machine-learning methods that recover this relationship without reading encrypted payloads. The work progresses from network-layer inference, to multimodal human-centered assessment, to systems that detect their own performance drift and select corrective action.</p>
+        </div>
+      </div>
+      <div class="theory-line" aria-label="Research progression">
+        <span>Encrypted traffic</span><i>→</i><span>QoE factors</span><i>→</i><span>Human response</span><i>→</i><span>Explainable prediction</span><i>→</i><span>Drift-aware recovery</span>
+      </div>
+    </section>
+
+    <section class="research-story dark-story">
+      <div class="story-heading section-pad">
+        <p class="story-year">2020 · IEEE IWCMC</p>
+        <h2>Inference without decryption</h2>
+        <p>The central theory is an observability argument: encrypted payloads hide content, but network and transport behavior still carries enough structure to infer startup delay, stalls, and selected bitrate.</p>
+      </div>
+      <div class="result-band">
+        <div><strong>91.13%</strong><span>HTTPS classification accuracy</span></div>
+        <div><strong>87.34%</strong><span>QUIC classification accuracy</span></div>
+        <div><strong>Random Forest</strong><span>best-performing classifier across the evaluated set</span></div>
+      </div>
+      <div class="method-grid section-pad compact-top">
+        <div><p class="method-no">01</p><h3>Observe</h3><p>Capture packet-header, flow, timing, and network/transport features while YouTube streams over HTTPS and QUIC.</p></div>
+        <div><p class="method-no">02</p><h3>Rank</h3><p>Use information-gain attribute evaluation to reduce feature count while preserving useful signal.</p></div>
+        <div><p class="method-no">03</p><h3>Infer</h3><p>Compare classifiers for selected bitrate, startup delay, and stalls; evaluate both full- and reduced-feature modes.</p></div>
+      </div>
+      <p class="source-line section-pad compact-top">Source: <em>Inferring Quality of Experience for Adaptive Video Streaming over HTTPS and QUIC</em>, IEEE IWCMC 2020. Research supported by UAEU Grant 31T102-UPAR-1-2017.</p>
+    </section>
+
+    <section class="research-story paper-story">
+      <div class="story-copy section-pad">
+        <p class="story-year">2021 · IEEE IWCMC · DOI 10.1109/IWCMC51323.2021.9498579</p>
+        <h2>Learning the structure of QoE</h2>
+        <p>The study combines Deep Self-Organizing Maps for unsupervised clustering with Multi-Layer Perceptron Backpropagation for supervised classification. Twelve comparison models were evaluated over four public YouTube-based datasets.</p>
+        <div class="metric-pair"><div><strong>Up to 99%</strong><span>reported system accuracy</span></div><div><strong>4 datasets</strong><span>trace-driven evaluation</span></div></div>
+        <a class="text-link" href="https://doi.org/10.1109/IWCMC51323.2021.9498579" target="_blank" rel="noreferrer">Open DOI ↗</a>
+      </div>
+      <figure class="evidence-figure">
+        <img src="assets/figures/dsom-mlpb.png" alt="DSOM and MLPB architecture using four public streaming datasets and twelve comparison models">
+        <figcaption>Scientific reconstruction of the 2021 method and evaluation. Values are reported in the IEEE IWCMC paper.</figcaption>
+      </figure>
+    </section>
+
+    <section class="research-story human-story">
+      <div class="story-heading section-pad">
+        <p class="story-year">2024 · Technologies 12(5), 62</p>
+        <h2>Adding the person back into the model</h2>
+        <p>Network measurements alone cannot explain how a viewer experiences interruptions or advertising. This framework combines ITU-T P.1203, facial-emotion recognition, advertisements, star ratings, comments, and streaming statistics.</p>
+      </div>
+      <div class="study-figures single-figure section-pad compact-top">
+        <figure><img src="assets/figures/human-qoe.png" alt="Human-centered QoE protocol combining consent, viewing, recording, ratings, comments, questionnaires, P.1203, emotion, and playback evidence"><figcaption>Purpose-built study map reconstructed from the 2024 protocol and reported findings.</figcaption></figure>
+      </div>
+      <div class="evidence-ledger section-pad compact-top">
+        <div><strong>661</strong><span>participants reached across 114 countries</span></div>
+        <div><strong>125</strong><span>completed questionnaires reported</span></div>
+        <div><strong>37.1%</strong><span>accuracy improvement over the P.1203 reference</span></div>
+        <div><strong>21.74%</strong><span>improvement reported after attribute selection</span></div>
+      </div>
+      <p class="source-line section-pad compact-top">Selma, Masud, Bentaleb & Harous (2024). <a href="https://doi.org/10.3390/technologies12050062" target="_blank" rel="noreferrer">DOI 10.3390/technologies12050062 ↗</a> Funded by UAEU-ADU Joint Research Grant 12T041.</p>
+    </section>
+
+    <section class="research-story aelix-story">
+      <div class="aelix-layout simplified section-pad">
+        <div class="story-copy">
+          <p class="story-year">2025 · IEEE Access 13, 213886–213909</p>
+          <h2>AELIX: explainable, ad-aware engagement inference</h2>
+          <p>AELIX formalizes QoE as a multimodal function of network conditions, visual signals, user affect, and advertising exposure. Its 19-step pipeline encodes categorical variables, generates advanced engagement metrics, balances classes with SMOTEENN, tunes four base learners, stacks their predictions, and explains feature influence with SHAP.</p>
+          <div class="formula" aria-label="AELIX theoretical model">Q̂<sub>t</sub> = f(x<sub>net</sub>, x<sub>vis</sub>, x<sub>usr</sub>, x<sub>ad</sub>)</div>
+          <ul class="fact-list">
+            <li>194 participants from more than 120 global regions.</li>
+            <li>43 facial and screen recordings synchronized with network telemetry.</li>
+            <li>Accuracies of 0.95 and 0.994 across reported evaluation configurations.</li>
+            <li>55.3% improvement over the ITU-T P.1203 benchmark.</li>
+          </ul>
+          <a class="text-link" href="https://doi.org/10.1109/ACCESS.2025.3641843" target="_blank" rel="noreferrer">Open IEEE Access article ↗</a>
+        </div>
+        <figure class="aelix-figure"><img src="assets/figures/aelix-model.png" alt="AELIX multimodal model combining network, visual, user, and advertising evidence through a 19-step explainable ensemble"><figcaption>Scientific reconstruction of AELIX inputs, pipeline, and reported outcomes from the 2025 IEEE Access paper.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="research-story foresight-story">
+      <div class="foresight-grid section-pad">
+        <div class="story-copy">
+          <p class="status-label">Submitted manuscript · results not yet peer-reviewed</p>
+          <p class="story-year">2026 · QoE-Foresight</p>
+          <h2>From prediction to self-healing</h2>
+          <p>QoE-Foresight treats model degradation as a control problem. EMMA fuses multimodal evidence; a Ridge predictor estimates QoE; HDDE monitors residual drift; a Double Deep Q-Network selects recovery actions; and SHAP explains both predictions and interventions.</p>
+          <p>The current manuscript reports an 813-sample fused benchmark, R² ≈ 0.953 for QoE prediction, HDDE F1 ≈ 0.967 with 0.035 s mean detection delay, and a 91% recovery-success rate with a mean gain of +0.73 MOS under controlled drift replay. These values are manuscript results and are labeled accordingly.</p>
+          <a class="text-link" href="https://github.com/tselma/QoEforesight" target="_blank" rel="noreferrer">Open research repository ↗</a>
+        </div>
+        <figure class="architecture-figure"><img src="assets/figures/foresight-loop.png" alt="QoE-Foresight closed loop connecting multimodal prediction, residual drift detection, DDQN recovery, and SHAP explanations"><figcaption>Purpose-built closed-loop reconstruction from the submitted manuscript; reported results await peer review.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="publications" class="publications section-pad">
+      <p class="section-index">02 / Publications</p>
+      <div class="publication-heading"><h2>Published record</h2><div class="filters" role="group" aria-label="Filter publications"><button class="active" data-filter="all" aria-pressed="true">All</button><button data-filter="journal" aria-pressed="false">Journals</button><button data-filter="conference" aria-pressed="false">Conferences</button><button data-filter="manuscript" aria-pressed="false">Manuscript</button></div></div>
+      <div class="publication-list">
+        <article data-type="manuscript"><time>2026</time><div><h3>QoE-Foresight: Performance-Aware Drift Detection and Self-Healing for Adaptive Video Streaming QoE Prediction Systems</h3><p>Tisa Selma, Mohammad Mehedy Masud, Saad Harous · Submitted manuscript</p></div><span class="pub-status">Submitted</span></article>
+        <article data-type="journal"><time>2025</time><div><h3>From Facial Expressions to Engagement: A Comprehensive Multimodal Approach to Infer Video Streaming User Experience</h3><p>IEEE Access, 13, 213886–213909 · DOI 10.1109/ACCESS.2025.3641843</p></div><a href="https://doi.org/10.1109/ACCESS.2025.3641843" target="_blank" rel="noreferrer">↗</a></article>
+        <article data-type="journal"><time>2024</time><div><h3>Inference Analysis of Video Quality of Experience in Relation with Face Emotion, Video Advertisement, and ITU-T P.1203</h3><p>Technologies, 12(5), 62 · DOI 10.3390/technologies12050062</p></div><a href="https://doi.org/10.3390/technologies12050062" target="_blank" rel="noreferrer">↗</a></article>
+        <article data-type="conference"><time>2021</time><div><h3>Video QoE Inference with Machine Learning</h3><p>IEEE IWCMC · DOI 10.1109/IWCMC51323.2021.9498579</p></div><a href="https://doi.org/10.1109/IWCMC51323.2021.9498579" target="_blank" rel="noreferrer">↗</a></article>
+        <article data-type="conference"><time>2020</time><div><h3>Inferring Quality of Experience for Adaptive Video Streaming over HTTPS and QUIC</h3><p>IEEE International Wireless Communications and Mobile Computing</p></div><a href="https://scholar.google.com/citations?hl=en&user=Me3_i5UAAAAJ" target="_blank" rel="noreferrer">↗</a></article>
+        <article data-type="journal"><time>2016</time><div><h3>Contrast-enhanced Bias-corrected Distance-regularized Level Set Method Applied to Hippocampus Segmentation</h3><p>Journal of Korea Multimedia Society · Medical image processing</p></div><a href="https://scholar.google.com/citations?hl=en&user=Me3_i5UAAAAJ" target="_blank" rel="noreferrer">↗</a></article>
+        <article data-type="other"><time>2009</time><div><h3>Simulation and Analysis of VoIP VPLS VPN and MPLS VPN</h3><p>Early network-systems study listed in the updated CV</p></div><span class="pub-status">CV record</span></article>
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements section-pad">
+      <p class="section-index">03 / Achievements</p>
+      <div class="achievement-title"><h2>Research, education, and institutional service</h2><p>Every item below is grounded in the supplied CV, credentials, publications, or dated recommendation letters.</p></div>
+      <div class="achievement-groups">
+        <section><h3>Academic formation</h3><dl><div><dt>2026</dt><dd><strong>Ph.D., Computer Science</strong><span>United Arab Emirates University · Graduate Research Assistant Fellowship · Dissertation: Data-Driven QoE Inference for HTTP Adaptive Streaming</span></dd></div><div><dt>2015</dt><dd><strong>M.Eng., Image Processing</strong><span>Inje University, South Korea · research grant for medical-image segmentation · 93.7% achievement reported in the 2017 institutional recommendation</span></dd></div><div><dt>2009</dt><dd><strong>B.App.Sc., Information Technology</strong><span>Telkom University, Indonesia · software-engineering specialization · BBM PPA Scholarship for academic excellence</span></dd></div></dl></section>
+        <section><h3>Research distinctions</h3><ul><li>Five peer-reviewed publications spanning medical imaging, encrypted streaming, QoE inference, facial emotion, and multimodal engagement.</li><li>Lead or first author on the five uploaded QoE research works.</li><li>Research supported through UAEU Grant 31T102-UPAR-1-2017 and UAEU-ADU Joint Research Grant 12T041.</li><li>Built the public QoE-Foresight research repository and an interactive data-driven QoE demonstration.</li></ul></section>
+        <section><h3>Technical contribution</h3><ul><li>Machine-learning inference of startup delay, stalls, and selected bitrate from encrypted HTTPS and QUIC traffic.</li><li>DSOM and MLPB architecture evaluated against twelve models over four public streaming datasets.</li><li>Real-world, multi-region data collection integrating consent, facial/screen recording, network telemetry, ratings, comments, and questionnaires.</li><li>AELIX adaptive ensemble with imbalance handling, advanced engagement metrics, stacking, sentiment analysis, and SHAP explanations.</li><li>QoE-Foresight closed loop linking multimodal prediction, hybrid drift detection, reinforcement-learning recovery, and explainability.</li></ul></section>
+        <section><h3>Awards and scholarships</h3><ul><li>First Winner, Best Infographics, House of Representatives of the Republic of Indonesia, 2019.</li><li>Graduate Research Assistant Fellowship, United Arab Emirates University, awarded in 2019.</li><li>Research grant for master’s work in medical image processing, Inje University, awarded in 2013.</li><li>BBM PPA Scholarship for bachelor’s study and academic excellence, reported for 2008.</li><li>Best student among departmental peers at Inje University during 2013–2015, according to Professor Heung Kook Choi.</li></ul></section>
+        <section><h3>Professional leadership</h3><ul><li>Information Technology Officer at the House of Representatives of Indonesia, 2009–present.</li><li>Documented responsibilities include systems analysis, software documentation, connectivity problem-solving, document-filing improvement, 3D visualization, infrastructure planning, budget forecasting, acceptance testing, risk assessment, and staff development.</li><li>Founder and company owner, Xavyr Ltd., London, from 2022; the updated CV reports sales growth, product development, market development, recruitment, training, and vendor negotiation responsibilities.</li><li>Graphic Designer at UAEU from 2021, producing digital and print materials and managing requirements, concepts, milestones, and feedback.</li></ul></section>
+        <section><h3>Teaching and early research</h3><ul><li>Faculty Member, Telkom University, 2009: instructional design, assessment, committee service, and student feedback.</li><li>Faculty Research Assistant, 2008–2009, including independent teaching and classes of up to 70 Artificial Intelligence students.</li><li>Research Assistant, Artificial Intelligence Laboratory, Telkom University, 2009; the updated CV reports gait-recognition research.</li><li>Research Assistant, Global System for Mobile Communication Laboratory, Telkom University, 2005–2007.</li><li>Image Processing Researcher, Medical Image Technology Laboratory, Inje University, 2013–2015.</li><li>Continuing education in Islamic Studies through Islamic Online University, 2013–2015, as reported in the updated CV.</li></ul></section>
+        <section><h3>Institutional outcomes</h3><ul><li>The updated CV reports 99% completion in detailed IT-asset recapitulation.</li><li>The updated CV reports a proposal projected to improve House workload capacity by 70%.</li><li>Produced bottom-up IT infrastructure presentations and recommendations for senior institutional stakeholders.</li><li>Created workflow templates, dashboards, system diagrams, troubleshooting documentation, and long-range IT plans.</li><li>Completed software-development activities from requirements and solution design through test planning, execution, acceptance, change control, and operational support.</li></ul></section>
+      </div>
+    </section>
+
+    <section class="capabilities section-pad">
+      <p class="section-index">Verified capabilities</p>
+      <h2>Methods and systems used across research and practice</h2>
+      <div class="capability-grid">
+        <div><h3>Machine learning</h3><p>Python · TensorFlow · TensorFlow.js · Keras · scikit-learn · OpenCV · MATLAB · Weka · Random Forest · ensemble learning · clustering · classification · regression</p></div>
+        <div><h3>QoE and multimedia</h3><p>HTTP adaptive streaming · HTTPS and QUIC traffic · ITU-T P.1203 · playback and buffer analysis · video quality · facial-emotion recognition · user engagement</p></div>
+        <div><h3>Vision and imaging</h3><p>Multimodal fusion · medical-image segmentation · image enhancement · digital imaging · 3D visualization · Adobe After Effects · Canva</p></div>
+        <div><h3>Data and distributed systems</h3><p>Hadoop · Spark · GraphX · MLlib · Spark Streaming · Scala · graph analytics · statistical analysis · data modeling</p></div>
+        <div><h3>Software and cloud</h3><p>C/C++ · JavaScript · PHP · Node.js · Express · Angular · React · Ruby on Rails · Swift · Flask · Streamlit · AWS · Azure · Google Cloud · IBM Watson Studio</p></div>
+        <div><h3>Data and operating platforms</h3><p>Oracle · MySQL · Firebase · Neo4j · Microsoft Access · MongoDB Atlas · IBM DB2 · Linux SUSE · BackTrack · Red Hat</p></div>
+      </div>
+    </section>
+
+    <section id="recognition" class="recognition section-pad">
+      <p class="section-index">04 / Recognition</p>
+      <h2>Observed by supervisors and institutional leaders</h2>
+      <div class="quotes">
+        <blockquote><p>“Best among the fellow students of our department between 2013 and 2015.”</p><footer><strong>Professor Heung Kook Choi</strong><span>M.Eng. supervisor, Inje University · letter dated 6 July 2017</span></footer></blockquote>
+        <blockquote><p>“Consistently performed her duties with competence and often goes the extra mile.”</p><footer><strong>Drs. Setya Novanto, Ak</strong><span>Then Speaker of the House of Representatives of Indonesia · recommendation dated 2017</span></footer></blockquote>
+      </div>
+      <p class="recognition-note">The letters describe Tisa as independent, creative, hardworking, committed, inquisitive, and an excellent problem solver. Excerpts are short and attributed; the original letters are not published here because they contain personal contact information.</p>
+    </section>
+
+    <section class="evidence-register section-pad">
+      <p class="section-index">05 / Evidence register</p>
+      <h2>Source discipline</h2>
+      <div class="register-grid"><div><strong>Peer-reviewed evidence</strong><p>2020 and 2021 IEEE IWCMC papers; 2024 Technologies article; 2025 IEEE Access article; 2016 Journal of Korea Multimedia Society article.</p></div><div><strong>Manuscript evidence</strong><p>QoE-Foresight is labeled submitted. Its results are reported as manuscript findings, not established peer-reviewed claims.</p></div><div><strong>Achievement evidence</strong><p>Degree certificates and equivalencies, CV, publication PDFs, grant acknowledgments, and two dated recommendation letters.</p></div></div>
+    </section>
+
+    <section class="contact">
+      <p>Postdoctoral research · interdisciplinary collaboration · reliable human-centered AI</p>
+      <h2>Let’s build systems that can explain what they know—and recognize when that knowledge no longer holds.</h2>
+      <div class="contact-links"><a href="mailto:meetme.tisa@gmail.com">Email ↗</a><a href="https://github.com/tselma" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://scholar.google.com/citations?hl=en&user=Me3_i5UAAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="https://www.linkedin.com/in/tisa-selma-phd-58960b211" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 Tisa Selma</span><span>Evidence-based research portfolio</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
