@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">DSOM and MLPB encrypted video QoE inference architecture</title>
+  <desc id="desc">Four public streaming datasets feed training and testing pipelines. Deep Self-Organizing Maps cluster traffic and MLPB classifies QoE factors, compared with twelve models.</desc>
+  <rect width="1400" height="900" fill="#f5f4ef"/>
+  <g font-family="Arial, Helvetica, sans-serif" letter-spacing="0">
+    <text x="70" y="76" fill="#617074" font-size="18">2021 · VIDEO QoE INFERENCE WITH MACHINE LEARNING</text>
+    <text x="70" y="122" fill="#101416" font-size="34" font-weight="700">Learn structure first. Classify experience second.</text>
+    <g transform="translate(70 190)">
+      <rect width="250" height="430" rx="6" fill="#ffffff" stroke="#c8cece"/>
+      <text x="28" y="48" fill="#101416" font-size="18" font-weight="700">INPUT EVIDENCE</text>
+      <text x="28" y="82" fill="#617074" font-size="15">Four public YouTube datasets</text>
+      <g transform="translate(28 118)" font-size="15">
+        <rect width="194" height="52" rx="3" fill="#e6f1f2"/><text x="18" y="32" fill="#126f7a">HTTPS traffic</text>
+        <rect y="68" width="194" height="52" rx="3" fill="#e6f1f2"/><text x="18" y="100" fill="#126f7a">QUIC traffic</text>
+        <rect y="136" width="194" height="52" rx="3" fill="#e6f1f2"/><text x="18" y="168" fill="#126f7a">Startup delay</text>
+        <rect y="204" width="194" height="52" rx="3" fill="#e6f1f2"/><text x="18" y="236" fill="#126f7a">Rebuffering events</text>
+        <rect y="272" width="194" height="52" rx="3" fill="#e6f1f2"/><text x="18" y="304" fill="#126f7a">Selected quality</text>
+      </g>
+    </g>
+    <path d="M340 405 H430" stroke="#8a9698" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(440 190)">
+      <rect width="360" height="205" rx="6" fill="#101416"/>
+      <circle cx="45" cy="48" r="19" fill="#1aa6b7"/>
+      <text x="82" y="44" fill="#ffffff" font-size="20" font-weight="700">DSOM</text>
+      <text x="82" y="69" fill="#aab3b5" font-size="14">Unsupervised representation</text>
+      <text x="28" y="115" fill="#ffffff" font-size="16">High-dimensional traffic → topology</text>
+      <text x="28" y="145" fill="#ffffff" font-size="16">Neighbourhoods reveal event structure</text>
+      <text x="28" y="175" fill="#ffffff" font-size="16">Xavier initialization · distance maps</text>
+    </g>
+    <path d="M620 405 V475" stroke="#8a9698" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(440 485)">
+      <rect width="360" height="205" rx="6" fill="#ffffff" stroke="#c8cece"/>
+      <circle cx="45" cy="48" r="19" fill="#df513d"/>
+      <text x="82" y="44" fill="#101416" font-size="20" font-weight="700">MLPB</text>
+      <text x="82" y="69" fill="#617074" font-size="14">Supervised classification</text>
+      <text x="28" y="115" fill="#101416" font-size="16">QoE-factor labels guide prediction</text>
+      <text x="28" y="145" fill="#101416" font-size="16">Startup · rebuffering · quality</text>
+      <text x="28" y="175" fill="#101416" font-size="16">Complementary to DSOM clustering</text>
+    </g>
+    <path d="M820 405 H890" stroke="#8a9698" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(900 190)">
+      <rect width="430" height="500" rx="6" fill="#ffffff" stroke="#c8cece"/>
+      <text x="32" y="52" fill="#101416" font-size="18" font-weight="700">EVALUATION</text>
+      <text x="32" y="91" fill="#617074" font-size="15">80/20 split · 10-fold walk-forward validation</text>
+      <line x1="32" y1="120" x2="398" y2="120" stroke="#d5d9d8"/>
+      <text x="32" y="165" fill="#101416" font-size="17" font-weight="700">12 comparison models</text>
+      <text x="32" y="200" fill="#617074" font-size="14">DNN · GRU · LSTM · RF · GBR · Ridge</text>
+      <text x="32" y="226" fill="#617074" font-size="14">Lasso · EN · LR · Perceptron · PAC · GLSTM</text>
+      <line x1="32" y1="260" x2="398" y2="260" stroke="#d5d9d8"/>
+      <text x="32" y="315" fill="#df513d" font-size="46" font-weight="700">up to 99%</text>
+      <text x="32" y="349" fill="#101416" font-size="16">reported system accuracy</text>
+      <text x="32" y="402" fill="#126f7a" font-size="38" font-weight="700">4 datasets</text>
+      <text x="32" y="434" fill="#101416" font-size="16">trace-driven public benchmarks</text>
+      <text x="32" y="476" fill="#617074" font-size="13">Source: IEEE IWCMC 2021</text>
+    </g>
+    <text x="70" y="830" fill="#617074" font-size="14">Scientific reconstruction from the paper's methods and reported evaluation; not a screenshot.</text>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8a9698"/></marker></defs>
+</svg>
