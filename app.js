@@ -32,7 +32,8 @@ const navObserver = new IntersectionObserver((entries) => {
   const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
   if (!visible) return;
   navLinks.forEach((link) => {
-    link.toggleAttribute('aria-current', link.hash === `#${visible.target.id}`);
+    if (link.hash === `#${visible.target.id}`) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
   });
 }, { rootMargin: '-30% 0px -55% 0px', threshold: [0.05, 0.2, 0.5] });
 sections.forEach((section) => navObserver.observe(section));
