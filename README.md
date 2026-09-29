@@ -13,6 +13,10 @@ A responsive, dependency-free portfolio covering video Quality of Experience, hu
 
 The page uses semantic HTML, CSS, and a small progressive-enhancement script. Core content, native research disclosures, publication links, and navigation remain available without JavaScript. Mobile navigation supports Escape, publication search announces its result count, and research links reveal papers hidden by search or category filters. The research explorer changes only on user input. Clipboard buttons report success or provide selectable DOI text when browser access is unavailable. Reduced-motion, keyboard-focus, and print styles are included. No external fonts, tracking, or runtime libraries are required.
 
+## Visual design
+
+The site uses a scientific-editorial visual system: pale paper, ink and teal, serif research titles, readable sans-serif body text, and monospace metadata. The interactive research map is explicitly a conceptual overview, not an experimental figure or quantitative result. Research cards and publication records use consistent rules, alignment, and restrained emphasis. All visual assets are local; no external fonts are required.
+
 ## Publications
 
 The 2026 QoE-Foresight paper is **published in IEEE Access**. Its citation is:

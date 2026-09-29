@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tisa Selma, Ph.D. — research in video Quality of Experience, human-centered AI, and reliable machine learning. Explore publications and open-access papers.">
-  <meta name="theme-color" content="#f7f7f2">
+  <meta name="theme-color" content="#f8fafb">
   <link rel="canonical" href="https://meetmetisa-dev.github.io/tisa.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tisa Selma, Ph.D. | Human-centered AI & Video QoE">
@@ -12,8 +12,8 @@
   <meta property="og:url" content="https://meetmetisa-dev.github.io/tisa.github.io/">
   <meta name="twitter:card" content="summary">
   <title>Tisa Selma, Ph.D. | Human-centered AI & Video QoE</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg?v=scientific-20260929" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=scientific-20260929">
   <script src="app.js" defer></script>
 </head>
 <body id="top">
@@ -21,7 +21,7 @@
   <header class="site-header">
     <div class="reading-progress" aria-hidden="true"></div>
     <div class="header-inner wrap">
-      <a class="brand" href="#top" aria-label="Tisa Selma — home"><span class="brand-mark" aria-hidden="true">ts.</span><span>Tisa Selma<span class="brand-degree">, Ph.D.</span></span></a>
+      <a class="brand" href="#top" aria-label="Tisa Selma — home"><span class="brand-mark" aria-hidden="true">TS</span><span>Tisa Selma<span class="brand-degree">, Ph.D.</span></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu <span aria-hidden="true">+</span></button>
       <nav id="primary-nav" aria-label="Primary navigation">
         <a href="#research">Research</a>
@@ -45,18 +45,19 @@
         <p class="hero-footnote">Ph.D. in Computer Science · United Arab Emirates University</p>
         <a class="latest-spotlight" href="#paper-2026"><span class="spotlight-icon" aria-hidden="true">↗</span><span><small>NEW IN IEEE ACCESS · 2026</small><strong>Meet QoE-Foresight</strong><span>Drift detection. Self-healing. Reliable predictions.</span></span><span class="spotlight-arrow" aria-hidden="true">→</span></a>
       </div>
-      <div class="research-visual" data-active="infer" aria-label="Interactive research overview">
-        <div class="visual-label"><span>EXPLORE THE RESEARCH</span><span class="visual-live"><i aria-hidden="true"></i> THREE CONNECTED IDEAS</span></div>
-        <div class="signal-inputs"><span data-signal="infer">Network<br><b>signals</b></span><span data-signal="explain">Human<br><b>response</b></span><span data-signal="adapt">Changing<br><b>conditions</b></span></div>
+      <figure class="research-visual" data-active="infer" aria-labelledby="research-map-title" aria-describedby="research-map-caption">
+        <div class="visual-label"><span id="research-map-title">RESEARCH MAP</span><span class="visual-live">CONCEPTUAL OVERVIEW</span></div>
+        <div class="signal-inputs"><span data-signal="infer"><small class="diagram-symbol" aria-hidden="true">x</small><span class="signal-title">Network signals</span></span><span data-signal="explain"><small class="diagram-symbol" aria-hidden="true">h</small><span class="signal-title">Human response</span></span><span data-signal="adapt"><small class="diagram-symbol" aria-hidden="true">Δ</small><span class="signal-title">Changing conditions</span></span></div>
         <div class="signal-paths" aria-hidden="true"><i></i><i></i><i></i></div>
-        <div class="qoe-orbit"><div class="qoe-core"><span>Quality of</span><strong>Experience</strong><span class="core-small">THE PERSON BEHIND THE PLAYBACK</span></div></div>
+        <div class="qoe-model"><span class="model-index" aria-hidden="true">QoE</span><div class="qoe-core"><span>Quality of Experience</span><strong>Inference · Explanation · Adaptation</strong></div></div>
         <div class="explorer-controls" role="group" aria-label="Choose a research direction" hidden><button type="button" data-explore="infer" aria-pressed="true">01 <span>Infer</span></button><button type="button" data-explore="explain" aria-pressed="false">02 <span>Explain</span></button><button type="button" data-explore="adapt" aria-pressed="false">03 <span>Adapt</span></button></div>
         <div id="explorer-description" aria-live="polite" aria-atomic="true">
           <div class="explorer-panel" data-panel="infer"><p class="explorer-kicker">01 / READ THE SIGNALS</p><h3>Understand what we can’t see.</h3><p>Use encrypted traffic patterns to infer the quality a viewer experiences.</p><a href="#paper-2021">Explore the paper <span aria-hidden="true">↗</span></a></div>
           <div class="explorer-panel" data-panel="explain" hidden><p class="explorer-kicker">02 / UNDERSTAND THE PERSON</p><h3>Put the viewer in the picture.</h3><p>Connect emotion, context, and network signals to explain quality and engagement.</p><a href="#paper-2025">Explore AELIX <span aria-hidden="true">↗</span></a></div>
           <div class="explorer-panel" data-panel="adapt" hidden><p class="explorer-kicker">03 / ADAPT TO CHANGE</p><h3>Keep predictions reliable.</h3><p>Detect model drift and select recovery actions as streaming conditions change.</p><a href="#paper-2026">Explore QoE-Foresight <span aria-hidden="true">↗</span></a></div>
         </div>
-      </div>
+        <figcaption id="research-map-caption" class="figure-caption"><b>Fig. 01</b><span>Connecting network signals, human experience, and model reliability.</span></figcaption>
+      </figure>
     </section>
 
     <div class="profile-strip wrap" aria-label="Research at a glance">
@@ -68,9 +69,9 @@
     <section id="research" class="section wrap" aria-labelledby="research-title">
       <div class="section-heading"><div><p class="eyebrow">01 / Research</p><h2 id="research-title">Signals. People.<br>Systems that adapt.</h2></div><p>One question connects my work: how can we understand a viewer’s experience—and keep that understanding reliable?</p></div>
       <div class="research-grid">
-        <article class="research-card"><div class="card-top"><span>01 / INFER</span><span class="mini-wave" aria-hidden="true">▂ ▅ ▃ ▇ ▄</span></div><h3>Read the signals.</h3><p>Estimate playback quality from encrypted traffic, without reading the video payload.</p><details class="research-details"><summary>Inside the research <span aria-hidden="true">+</span></summary><dl><div><dt>Inputs</dt><dd>Network and transport features from streaming traffic.</dd></div><div><dt>Focus</dt><dd>Startup delay, playback stalls, and selected bitrate.</dd></div></dl></details><a class="text-link" href="#paper-2021">Encrypted streaming <span aria-hidden="true">↗</span></a></article>
-        <article class="research-card"><div class="card-top"><span>02 / EXPLAIN</span><span class="mini-orbits" aria-hidden="true">◎</span></div><h3>Understand the person.</h3><p>Bring emotion, context, and network measurements together to explain engagement.</p><details class="research-details"><summary>Inside the research <span aria-hidden="true">+</span></summary><dl><div><dt>Inputs</dt><dd>Facial emotion, viewer feedback, advertising, and network signals.</dd></div><div><dt>Focus</dt><dd>Multimodal, explainable video-experience inference.</dd></div></dl></details><a class="text-link" href="#paper-2025">Multimodal experience <span aria-hidden="true">↗</span></a></article>
-        <article class="research-card"><div class="card-top"><span>03 / ADAPT</span><span class="mini-loop" aria-hidden="true">↻</span></div><h3>Adapt to change.</h3><p>Detect drifting predictions and select recovery actions with QoE-Foresight.</p><details class="research-details"><summary>Inside the research <span aria-hidden="true">+</span></summary><dl><div><dt>Method</dt><dd>Performance-aware drift detection and a self-healing controller.</dd></div><div><dt>Focus</dt><dd>Reliable, explainable predictions under changing conditions.</dd></div></dl></details><a class="text-link" href="#paper-2026">Reliable machine learning <span aria-hidden="true">↗</span></a></article>
+        <article class="research-card"><div class="card-top"><span>01 / INFER</span><span class="method-glyph glyph-infer" aria-hidden="true"><svg viewBox="0 0 64 32" focusable="false"><path d="M2 24H12V12H22V19H32V7H42V16H52V10H62"/><path d="M2 29H62"/></svg></span></div><h3>Read the signals.</h3><p>Estimate playback quality from encrypted traffic, without reading the video payload.</p><details class="research-details"><summary>Inside the research <span aria-hidden="true">+</span></summary><dl><div><dt>Inputs</dt><dd>Network and transport features from streaming traffic.</dd></div><div><dt>Focus</dt><dd>Startup delay, playback stalls, and selected bitrate.</dd></div></dl></details><a class="text-link" href="#paper-2021">Encrypted streaming <span aria-hidden="true">↗</span></a></article>
+        <article class="research-card"><div class="card-top"><span>02 / EXPLAIN</span><span class="method-glyph glyph-explain" aria-hidden="true"><svg viewBox="0 0 64 32" focusable="false"><rect x="2" y="3" width="12" height="10" rx="1"/><rect x="2" y="19" width="12" height="10" rx="1"/><path d="M14 8H24L34 16M14 24H24L34 16M34 16H46"/><rect x="46" y="10" width="16" height="12" rx="1"/></svg></span></div><h3>Understand the person.</h3><p>Bring emotion, context, and network measurements together to explain engagement.</p><details class="research-details"><summary>Inside the research <span aria-hidden="true">+</span></summary><dl><div><dt>Inputs</dt><dd>Facial emotion, viewer feedback, advertising, and network signals.</dd></div><div><dt>Focus</dt><dd>Multimodal, explainable video-experience inference.</dd></div></dl></details><a class="text-link" href="#paper-2025">Multimodal experience <span aria-hidden="true">↗</span></a></article>
+        <article class="research-card"><div class="card-top"><span>03 / ADAPT</span><span class="method-glyph glyph-adapt" aria-hidden="true"><svg viewBox="0 0 64 32" focusable="false"><rect x="3" y="10" width="16" height="12" rx="1"/><rect x="45" y="10" width="16" height="12" rx="1"/><path d="M19 16H45M39 12L45 16L39 20M53 10V3H11V10M11 22V29H53V22"/></svg></span></div><h3>Adapt to change.</h3><p>Detect drifting predictions and select recovery actions with QoE-Foresight.</p><details class="research-details"><summary>Inside the research <span aria-hidden="true">+</span></summary><dl><div><dt>Method</dt><dd>Performance-aware drift detection and a self-healing controller.</dd></div><div><dt>Focus</dt><dd>Reliable, explainable predictions under changing conditions.</dd></div></dl></details><a class="text-link" href="#paper-2026">Reliable machine learning <span aria-hidden="true">↗</span></a></article>
       </div>
     </section>
 
