@@ -4,12 +4,14 @@ A responsive, dependency-free portfolio covering video Quality of Experience, hu
 
 ## Site structure
 
-- Introduction and research overview
-- Six publications with journal/conference filters
+- Interactive Infer / Explain / Adapt research overview
+- Research cards with expandable method details
+- Six publications with combined topic search and journal/conference filters
+- DOI copying and an expandable citation for the latest paper
 - Education and professional background
 - Contact and CV download
 
-The page uses semantic HTML, CSS, and a small progressive-enhancement script. Content and navigation remain available without JavaScript. Mobile navigation supports Escape, publication filters announce their result count, and research links reveal papers hidden by filters. Reduced-motion and print styles are included. No external fonts, tracking, or runtime libraries are required.
+The page uses semantic HTML, CSS, and a small progressive-enhancement script. Core content, native research disclosures, publication links, and navigation remain available without JavaScript. Mobile navigation supports Escape, publication search announces its result count, and research links reveal papers hidden by search or category filters. The research explorer changes only on user input. Clipboard buttons report success or provide selectable DOI text when browser access is unavailable. Reduced-motion, keyboard-focus, and print styles are included. No external fonts, tracking, or runtime libraries are required.
 
 ## Publications
 
@@ -35,6 +37,6 @@ Then visit <http://localhost:8080>.
 
 ## Deployment and maintenance
 
-The existing GitHub Pages configuration publishes this repository. Keep its current Pages source settings. No build step is needed.
+The GitHub Pages workflow in `.github/workflows/static.yml` publishes pushes to `main`. Keep its current Pages source settings. No build step is needed.
 
-Edit `index.html` for copy and publication links, `styles.css` for appearance, and `app.js` for navigation and filtering. When adding a paper, update the publication total and category counts. Preserve exact titles and DOI links; only label papers open access when supported by the publication record.
+Edit `index.html` for copy and publication links, `styles.css` for appearance, and `app.js` for interactions. When adding a paper, update the publication total and category counts. Optional `data-keywords` on a publication adds search synonyms. Preserve exact titles and DOI links; only label papers open access when supported by the publication record.
